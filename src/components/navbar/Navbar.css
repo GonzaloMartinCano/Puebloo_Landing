@@ -1,0 +1,54 @@
+.bg-custom-2 {
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.title {
+    color: #7abcff;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.links h1{
+    color: rgb(167, 125, 10);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title img {
+    width: 200px;
+    overflow: visible;
+    margin-left: 20px;
+}
+
+
+
+@media (max-width: 600px) {
+    .title img {
+        width: 80px;
+        margin-left: 0;
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 600px) and (max-height: 980px)  {
+    .title img {
+        width: 120px;
+        margin-left: 0;
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 600px)   {
+    .title img {
+        width: 120px;
+        margin-left: 0;
+        margin-top: 0px;
+    }
+}
+
