@@ -1,6 +1,5 @@
 import { Component } from "react";
 
-import Card from "react-bootstrap/Card"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import pueblo from './../../img/Imágenes_Pueblos/CASA freepik 2.jpg'
@@ -54,7 +53,7 @@ export default class Index extends Component {
                 <Row className="nosotros">
                     <Col md={{span: 10, offset: 1}}>
                         <div className="nosotros_img" >
-                            <img src={entity} alt="nav_img"/>
+                            <img src={entity} alt="nav_img" />
                         </div>
                     </Col>
                     <Col md={{ span: 4, offset: 4}}   >
