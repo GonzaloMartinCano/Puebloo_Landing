@@ -10,6 +10,7 @@ import pueblo from './../../img/Imágenes_Pueblos/casa-landing.jpg'
 import entity from './../../img/iconos/entitys.svg'
 import search from './../../img/iconos/search.svg'
 import home from './../../img/iconos/home.svg'
+import video from './../../img/puebloo-promocion.mp4'
 import './Index.css'
 import Typing from 'react-typing-animation';
 import InstagramIcon from '@material-ui/icons/Instagram'
@@ -21,13 +22,13 @@ const Index = () => {
         puebloVerde,
     ]
     const [index, setIndex] = useState(0)
-    //const [imageUrl, setImageUrl] = useState(pueblo)
+
 
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setIndex((index + 1) % images.length)
-            //      setImageUrl(images[index])
+
         }, 3000);
         return () => clearTimeout(timer);
     }, [index])
@@ -35,9 +36,11 @@ const Index = () => {
     return (
         <div className="index">
             <div className="presentacion fondo">
+
                 {/*                 <Typing speed={100} className="typing">
                     <h1>Y tú,<br /> ¿de quien eres?</h1>
                 </Typing> */}
+
                 <div className="typing">
                     <h1 >Y tú,<br /> ¿de quien eres?</h1>
                 </div>
@@ -50,7 +53,8 @@ const Index = () => {
             <Row style={{ margin: "0px" }}>
                 <Col md={{ span: 6, offset: 3 }} >
                     <div className="embedResponsive embedResponsive16by9">
-                        <iframe title="video" className="video" src="https://drive.google.com/file/d/1BjbGlKujQIbIVlvwPWJKVZYxX_ivn1IJ/preview"></iframe>
+                        <video controls
+                            className="video" src={video} type="video/mp4" />
                     </div>
                 </Col>
             </Row>
