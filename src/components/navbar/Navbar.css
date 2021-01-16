@@ -1,7 +1,12 @@
 .bg-custom-2 {
+    position: fixed;
     display: flex;
     justify-content: space-between;
- 
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+    margin-top: 0;
+    margin-bottom: 0px;
 }
 
 .title {
@@ -26,7 +31,9 @@
     margin-left: 20px;
 }
 
-
+.navbar {
+    padding: 0.2rem 1rem;
+}
 
 @media (max-width: 600px) {
     .title img {

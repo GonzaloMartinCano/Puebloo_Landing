@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import './Navbar.css'
-import logo_puebloo from './../../img/logo_puebloo_2.png'
+import logo_puebloo from './../../img/logo.png'
 
 export default class MyNavbar extends Component {
 

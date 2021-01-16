@@ -3,27 +3,27 @@ import { Component } from "react";
 import Card from "react-bootstrap/Card"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-
-import tablet from './../../img/tablet.png'
+import pueblo from './../../img/Imágenes_Pueblos/CASA freepik 2.jpg'
+import entity from './../../img/iconos/entitys.svg'
+import search from './../../img/iconos/search.svg'
+import home from './../../img/iconos/home.svg'
 import './Index.css'
 import Typing from 'react-typing-animation';
+import InstagramIcon from '@material-ui/icons/Instagram'
 
 export default class Index extends Component {
     render() {
         return (
-            <div>
-                <div className="transition">
+            <div className="index">
                     <div className="presentacion fondo">
-                        <Typing loop={true} speed={100}>
+                        <Typing loop={true} speed={100} className="typing">
                             <h1>Y tú,<br /> ¿de quien eres?</h1>
                             <Typing.Reset count={0} delay={1500} />
-                        </Typing>   
+                        </Typing>
+                        <img src={pueblo} alt="nav_img"/>
                     </div>
-                </div>
-                
-
                 <div className="bienvenido">
-                    <h4>Conoce la aplicación para cuidar de nuestros pueblos: </h4><br/>
+                    <br/>
                     <h2> Bienvenidos a PUEBLOO  </h2>
                 </div>
                 <Row style={{margin: "0px"}}>
@@ -33,39 +33,62 @@ export default class Index extends Component {
                         </div>
                     </Col>
                 </Row>
+                <div className="bienvenido laredsocial">
 
-                <Row className="nosotros" style={{margin: "0px"}}>
-                    <Col md={6} style={{padding: "0px"}}>
+                    <h2>La Red Social Rural</h2>
+                </div>
+                <Row className="nosotros" >
+                    <Col md={{span: 10, offset: 1 }}>
                         <div className="nosotros_img" >
-                            <img src={tablet} alt="nav_img"/>
+                            <img src={search} alt="nav_img"/>
                         </div>
                     </Col>
-                    <Col md={6}  style={{padding: "0px"}}>
+                    <Col md={{ span: 4, offset: 4}} >
                         <div className="nosotros_texto">
-                            <h1>Sobre Nosotros</h1>
-                            <hr></hr>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                            <h1>Encuentra tu pueblo</h1>
+                            
+                            <p>Y tú, ¿de quién eres?. Utiliza nuestro buscador para encontrar cualquier aldea, pedanía o municipio de España. Busca un pueblo, consulta su información o síguelo para unirte a su comunidad, y comienza a disfrutar de todas las ventajas que te ofrecerá.</p>
                         </div>
                     </Col>
-
-
                 </Row>
-                <Row className="footer" style={{margin: "0px"}}>
-                    <Col md={{ span: 3, offset: 2 }} xs={{ span: 3, offset: 3 }} className="footer_details">
-                        <p>Contacto</p>
-                        <p>Contacto</p>
-                        <p>Contacto</p>
+                <Row className="nosotros">
+                    <Col md={{span: 10, offset: 1}}>
+                        <div className="nosotros_img" >
+                            <img src={entity} alt="nav_img"/>
+                        </div>
+                    </Col>
+                    <Col md={{ span: 4, offset: 4}}   >
+                        <div className="nosotros_texto">
+                            <h1>Conecta con su gente</h1>
+                      
+                            <p>Entérate de todo lo que ocurre en torno a tu pueblo. Busca a tus amigos de la infancia o haz nuevos amigos, da like a la foto de los kintos de tu madre, chatea sobre las últimas novedades, muestra al resto de pueblos cuáles eran las tradiciones de tus abuelos, usa el calendario para añadir eventos como las fiestas de tu pueblo o la semana cultural, o encuentra el trabajo de tus sueños.</p>
+                        </div>
+                    </Col>
+                </Row>
+                <Row className="nosotros" >
+                    <Col md={{span: 10, offset: 1}} >
+                        <div className="nosotros_img" >
+                            <img src={home} alt="nav_img"/>
+                        </div>
+                    </Col>
+                    <Col md={{ span: 4, offset: 4}}  >
+                        <div className="nosotros_texto">
+                            <h1>Escribe su historia</h1>
+                    
+                            <p>Se parte de la historia de tu pueblo, participando y formando parte de su desarrollo. Como red social, nuestro objetivo es conectar a la población rural y facilitar la vida de los habitantes de los pueblos para frenar la despoblación. Desde Puebloo, pondremos las herramientas necesarias para que encuentres tu pueblo ideal e inicies una nueva vida… ¿Quieres saber cómo?</p>
+                        </div>
+                    </Col>
+                </Row>
+                <Row className="footer" >
+                    <Col md={{ span: 6, offset: 3 }} xs={{ span: 4, offset: 4 }} className="footer_details redes">
+                        <p>Contáctanos</p>
+                    </Col>
+                    <Col  md={{ span: 6, offset: 3 }} xs={{ span: 4, offset: 4 }} className="footer_details redes">
+                    <InstagramIcon></InstagramIcon>
 
                     </Col>
-                    <Col md={{ span: 3}}  className="footer_details">
-                        <p>Contacto</p>
-                        <p>Contacto</p>
-                        <p>Contacto</p>
-                    </Col>
-                    <Col md={{ span: 3}}  className="footer_details">
-                        <p>There are many variations of passages of Lorem Ipsum available,</p>
-                        <p>There are many variations of passages of Lorem Ipsum available,</p>
-                        
+                    <Col md={{ span: 6, offset: 3 }} xs={{ span: 10, offset: 1}} className="footer_details copyright">
+                        <p>Todos los derechos reservados &copy; Puebloo 2021</p>
                     </Col>
                 </Row>
             </div>

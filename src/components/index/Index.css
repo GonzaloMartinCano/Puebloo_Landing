@@ -1,120 +1,110 @@
+.fondo img{
+   z-index: -1;
+   margin-top: -25vh;
+   text-align: center;  
+   height: 85vh;
+   width: 100%;
+   object-fit: cover;
+}
 
-.fondo{
-   text-align: center;
-   background-image: url(../../img/Imágenes_Pueblos/CASA\ freepik\ 2.jpg);
-   background-position: bottom; 
-   background-repeat: no-repeat; 
-   background-size: cover;
-   height: 550px;
-   transition: 2s ease all;
-}
-.fondo:hover {
-   background-image: url(../../img/Imágenes_Pueblos/ANDALUZ_pixabay_1.jpg);
-   background-position: center; 
-}
-.presentacion.fondo div{
-   margin-top: 0px;
+.typing {
+   z-index: 1;
+   position: relative;
+   height: 200px;
 }
 .presentacion.fondo h1{
-   padding-top: 180px;
+   padding-top: 35vh;
    color: rgb(245, 247, 244);
    font-size: 60px;
    font-weight: 400;
    text-shadow: rgb(0, 0, 0) 1px 0 1px;
-
 }
 
-.bienvenido h4{
-   color: rgb(75, 74, 74);
-   margin-top: 25px;
-   text-align: center;
-   color:rgb(26, 85, 2);
-   font-weight: 200;
- 
-}
-.bienvenido h2 {
-   color: rgb(59, 59, 59);
+.bienvenido h2{
    text-align: center;
    color:rgb(26, 85, 2);
    font-weight: 400;
+   margin-top: 0;
+}
+
+.laredsocial h2{
+   margin-top: 40px;
+   font-weight: 500;
 }
 
 .nosotros {
-   margin-top: 100px;
+   margin-top: 20px;
+   margin-left: 0;
+   margin-right: 0;
+   text-align: center;
 }
 .nosotros_texto {
-   margin-top: 100px;
-   margin-left: 0px;
-   margin-right: 50px;
-   max-width: 800px;
-   font-size: 15px;
+   font-size: 1rem;
    text-align: justify;
+   margin-top: 15px;
 }
 .nosotros_texto h1{
+
    text-align: center;
    color:rgb(26, 85, 2);
+   font-size: x-large;
+   padding-bottom: 0.8em;
+   border-bottom: solid 1px rgb(248, 208, 99);
+   margin-bottom: 20px;
 }
 .nosotros_img {
-   margin-top: 100px;
-   text-align: left;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   text-align: center;
 }
 .nosotros_img img{
-   width: 80%;
+   width: 10%;
    text-align: center;
+   margin-top: 0;
 }
 
 .footer {
-   margin-top: 150px;
+   margin-left: 0;
+   margin-right: 0;
+   margin-top: 4%;
    background-color:  rgb(167, 125, 10);
 }
 
 .footer_details {
-   margin-top: 50px;
-   margin-bottom: 50px;
-   font-size: 20px;
+   margin-top: 5px;
+   font-size: 0.9rem;
    color: white;
 }
 
 .video {
-   margin-top: 80px;
+   margin-top: 50px;
    width: calc(100vw / 2 );
    height: calc((100vw / 4 ) );
-   border-radius: 50px;
+   border-radius: 20px;
 }
 
 @media (max-width: 600px) {
-   .presentacion.fondo {
-      margin-top: 0px;
-      padding-top: 0px;
-      height: 575px;
-   }
-   .presentacion.fondo div{
-      margin-top: 0px;
-   }
+
    .presentacion.fondo h1{
       font-size: 40px;
       font-weight: 400;
-      padding-top: 80px;
+      padding-top: 35vh;
    }
    .bienvenido {
       text-align: center;
    }
-   .bienvenido h4{
-      color: rgb(75, 74, 74);
-      margin-top: 30px;
-      text-align: center;
-      font-size: medium;
-      font-weight: 500;
-      color:rgb(26, 85, 2);
-   }
    .bienvenido h2 {
-      margin-top: 30px;
-      color: rgb(59, 59, 59);
       text-align: center;
-      font-size: larger;
-      font-weight: 600;
+      font-size: 1.3rem;
+      font-weight: 400;
       color:rgb(26, 85, 2);
    }
+   .laredsocial h2{
+      font-size: 1.5rem;
+      margin-top: 20px;
+      margin-bottom: 40px;
+   }
+   
    .embedResponsive{
       text-align: center;
    }
@@ -122,16 +112,13 @@
       margin-top: 50px;
       width: 80vw;
       height: 60vw;
-      border-radius: 50px;
+      border-radius: 20px;
       justify-self: center;
-   }
-   .nosotros_img {
-      display: none;
    }
 
    .nosotros_texto {
-      margin: 50px;
-      font-size: 15px;
+      margin: 50px 20px 0px 20px;
+    
    }
    .nosotros_texto h1{
       text-align: center;
@@ -139,10 +126,43 @@
       color:rgb(26, 85, 2);
    }
    .footer_details {
-      margin-top: 50px;
-      margin-bottom: 50px;
+      margin-top: 5px;
+      margin-bottom: 5px;
       font-size: 10px;
       color: white;
       text-align: center;
    }
+   .nosotros_img {
+      margin-top: 0px;
+      margin-bottom: 0px;
+   }
+   .nosotros_img img{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 20%;
+   }
+}
+.redes{
+   margin-bottom: 0;
+}
+.copyright {
+   margin-bottom: 5px;
+}
+
+@media (min-width: 1300px)   {
+   .fondo img {
+      margin-top: -20vh;
+   }
+   .nosotros_img img{
+      width: 5%;
+      text-align: center;
+      margin-top: 0;
+   }
+   .bienvenido h2 {
+      margin-top: 50px;
+   }
+   .nosotros_texto {
+      font-size: 1.15rem;
+   }
+   
 }
