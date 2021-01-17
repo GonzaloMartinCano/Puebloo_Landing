@@ -58,11 +58,11 @@ const Index = () => {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setIndex((index + 1) % images.length)
+            setIndex((index + 1) % 3)
             //      setImageUrl(images[index])
         }, 3000);
         return () => clearTimeout(timer);
-    }, [index, images])
+    }, [index])
 
     return (
         <div className="index" >
