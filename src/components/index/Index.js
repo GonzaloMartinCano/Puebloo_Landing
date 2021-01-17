@@ -10,7 +10,6 @@ import entity from './../../img/iconos/entitys.svg'
 import search from './../../img/iconos/search.svg'
 import home from './../../img/iconos/home.svg'
 import './Index.css'
-import Typing from 'react-typing-animation';
 import InstagramIcon from '@material-ui/icons/Instagram'
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -69,10 +68,6 @@ const Index = () => {
         <div className="index" >
 
             <div className="presentacion fondo" >
-            {/* <Typing loop={true} speed={100} className="typing">
-                            <h1>Y tú,<br /> ¿de quien eres?</h1>
-                            <Typing.Reset count={0} delay={1500} />
-                        </Typing> */}
                 <div className="typing">
                     <h1 >Y tú,<br /> ¿de quien eres?</h1>
                 </div>
