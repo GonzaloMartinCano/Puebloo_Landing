@@ -67,7 +67,7 @@ const Index = () => {
         <div className="index" >
             <div className="presentacion fondo" >
                 <div className="typing">
-                    <h1 >Y tú,<br /> ¿de quien eres?</h1>
+                    <h1 >Y tú,<br /> ¿de quién eres?</h1>
                 </div>
                 <img src={images[index]} alt="nav_img" />
             </div>
