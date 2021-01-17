@@ -100,6 +100,9 @@
 }
 
 @media (max-width: 600px) {
+   .fondo img{
+      height: 80vh;
+   }
 
    .presentacion.fondo h1{
       font-size: 40px;

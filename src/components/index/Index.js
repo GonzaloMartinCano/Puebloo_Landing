@@ -14,6 +14,7 @@ import InstagramIcon from '@material-ui/icons/Instagram'
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import video from './../../video/Puebloo-video-promocional.mp4'
 
 const Contacto = () => {
   return (
@@ -53,8 +54,6 @@ const Index = () => {
         puebloVerde,
     ]
     const [index, setIndex] = useState(0)
-    //const [imageUrl, setImageUrl] = useState(pueblo)
-
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -79,9 +78,7 @@ const Index = () => {
             </div>
             <Row style={{ margin: "0px" }}>
                 <Col md={{ span: 6, offset: 3 }} >
-                    <div className="embedResponsive embedResponsive16by9">
-                        <iframe title="video" className="video" src="https://drive.google.com/file/d/1BjbGlKujQIbIVlvwPWJKVZYxX_ivn1IJ/preview"></iframe>
-                    </div>
+                    <video controls className="video" src={video} type="video/mp4" />
                 </Col>
             </Row>
             <div className="bienvenido laredsocial">
