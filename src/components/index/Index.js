@@ -12,6 +12,40 @@ import home from './../../img/iconos/home.svg'
 import './Index.css'
 import Typing from 'react-typing-animation';
 import InstagramIcon from '@material-ui/icons/Instagram'
+import EmailIcon from '@material-ui/icons/Email';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
+
+const Contacto = () => {
+  return (
+    <Row className="footer">
+      <Col
+        md={{ span: 6, offset: 3 }}
+        xs={{ span: 4, offset: 4 }}
+        className="footer_details contacto"
+      >
+        <p>Contáctanos</p>
+      </Col>
+      <Col
+        md={{ span: 6, offset: 3 }}
+        xs={{ span: 6, offset: 3 }}
+        className="footer_details redes"
+      >
+        <a href="mailto:gmcano85@gmail.com?subject=Contact through portfolio" style={{ color: 'white' }}><EmailIcon className="icono"/></a>
+        <LinkedInIcon className="icono" />
+        <TwitterIcon className="icono" />
+        <InstagramIcon className="icono" />
+      </Col>
+      <Col
+        md={{ span: 6, offset: 3 }}
+        xs={{ span: 10, offset: 1 }}
+        className="footer_details copyright"
+      >
+        <p>Todos los derechos reservados &copy; Puebloo 2021</p>
+      </Col>
+    </Row>
+  );
+};
 
 const Index = () => {
     const images = [
@@ -32,64 +66,16 @@ const Index = () => {
     }, [index])
 
     return (
-        <div className="index">
-            <div className="presentacion fondo">
-                {/*                 <Typing speed={100} className="typing">
-                    <h1>Y tú,<br /> ¿de quien eres?</h1>
-                </Typing> */}
+        <div className="index" >
+
+            <div className="presentacion fondo" >
+            {/* <Typing loop={true} speed={100} className="typing">
+                            <h1>Y tú,<br /> ¿de quien eres?</h1>
+                            <Typing.Reset count={0} delay={1500} />
+                        </Typing> */}
                 <div className="typing">
                     <h1 >Y tú,<br /> ¿de quien eres?</h1>
                 </div>
-<<<<<<< HEAD
-                <Row className="nosotros" >
-                    <Col md={{span: 10, offset: 1 }}>
-                        <div className="nosotros_img" >
-                            <img src={search} alt="nav_img"/>
-                        </div>
-                    </Col>
-                    <Col md={{ span: 4, offset: 4}} >
-                        <div className="nosotros_texto">
-                            <h1>Encuentra tu pueblo</h1>
-                            
-                            <p>Y tú, ¿de quién eres?. Utiliza nuestro buscador para encontrar cualquier aldea, pedanía o municipio de España. Busca un pueblo, consulta su información o síguelo para unirte a su comunidad, y comienza a disfrutar de todas las ventajas que te ofrecerá.</p>
-                        </div>
-                    </Col>
-                </Row>
-                <Row className="nosotros">
-                    <Col md={{span: 10, offset: 1}}>
-                        <div className="nosotros_img" >
-                            <img src={entity} alt="nav_img" />
-                        </div>
-                    </Col>
-                    <Col md={{ span: 4, offset: 4}}   >
-                        <div className="nosotros_texto">
-                            <h1>Conecta con su gente</h1>
-                      
-                            <p>Entérate de todo lo que ocurre en torno a tu pueblo. Busca a tus amigos de la infancia o haz nuevos amigos, da like a la foto de los kintos de tu madre, chatea sobre las últimas novedades, muestra al resto de pueblos cuáles eran las tradiciones de tus abuelos, usa el calendario para añadir eventos como las fiestas de tu pueblo o la semana cultural, o encuentra el trabajo de tus sueños.</p>
-                        </div>
-                    </Col>
-                </Row>
-                <Row className="nosotros" >
-                    <Col md={{span: 10, offset: 1}} >
-                        <div className="nosotros_img" >
-                            <img src={home} alt="nav_img"/>
-                        </div>
-                    </Col>
-                    <Col md={{ span: 4, offset: 4}}  >
-                        <div className="nosotros_texto">
-                            <h1>Escribe su historia</h1>
-                    
-                            <p>Se parte de la historia de tu pueblo, participando y formando parte de su desarrollo. Como red social, nuestro objetivo es conectar a la población rural y facilitar la vida de los habitantes de los pueblos para frenar la despoblación. Desde Puebloo, pondremos las herramientas necesarias para que encuentres tu pueblo ideal e inicies una nueva vida… ¿Quieres saber cómo?</p>
-                        </div>
-                    </Col>
-                </Row>
-                <Row className="footer" >
-                    <Col md={{ span: 6, offset: 3 }} xs={{ span: 4, offset: 4 }} className="footer_details redes">
-                        <p>Contáctanos</p>
-                    </Col>
-                    <Col  md={{ span: 6, offset: 3 }} xs={{ span: 4, offset: 4 }} className="footer_details redes">
-                    <InstagramIcon></InstagramIcon>
-=======
                 <img src={images[index]} alt="nav_img" />
             </div>
             <div className="bienvenido">
@@ -104,7 +90,6 @@ const Index = () => {
                 </Col>
             </Row>
             <div className="bienvenido laredsocial">
->>>>>>> 5a7f6c5adae79a548ff6dc73ede9e9fcefc6f87a
 
                 <h2>La Red Social Rural</h2>
             </div>
@@ -149,18 +134,7 @@ const Index = () => {
                     </div>
                 </Col>
             </Row>
-            <Row className="footer" >
-                <Col md={{ span: 6, offset: 3 }} xs={{ span: 4, offset: 4 }} className="footer_details redes">
-                    <p>Contáctanos</p>
-                </Col>
-                <Col md={{ span: 6, offset: 3 }} xs={{ span: 4, offset: 4 }} className="footer_details redes">
-                    <InstagramIcon></InstagramIcon>
-
-                </Col>
-                <Col md={{ span: 6, offset: 3 }} xs={{ span: 10, offset: 1 }} className="footer_details copyright">
-                    <p>Todos los derechos reservados &copy; Puebloo 2021</p>
-                </Col>
-            </Row>
+           <Contacto/>
         </div>
     );
 };

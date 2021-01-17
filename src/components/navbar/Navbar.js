@@ -13,10 +13,9 @@ const MyNavbar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                    <Nav.Link as={Link} to="/" href="/" className="links"><h1>Inicio</h1></Nav.Link>
-                    <Nav.Link as={Link} to="/Puebloo/Nosotros" href="/Puebloo/resume" className="links"><h1>Nosotros</h1></Nav.Link>
-                    <Nav.Link as={Link} to="/Puebloo/Proyectos" href="/Puebloo/Proyectos" className="links"><h1>Proyectos</h1></Nav.Link>
-                    <Nav.Link as={Link} to="/Puebloo/Contacto" href="/Puebloo/Contacto" className="links"><h1>Contacto</h1></Nav.Link>
+                    <Nav.Link as={Link} to="#" className="links"><h1>Inicio</h1></Nav.Link>
+                    <Nav.Link as={Link} to="/nosotros"  className="links"><h1>Nosotros</h1></Nav.Link>
+                    <Nav.Link as={Link} to="/contacto"  className="links"><h1>Contacto</h1></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

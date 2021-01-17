@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact render={() => <Index/>} /> 
-      
+        <Route path="/contacto" exact render={() => <Index/>} /> 
 
       </Switch>
 
