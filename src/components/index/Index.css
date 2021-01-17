@@ -78,9 +78,6 @@
 
 .video {
    margin-top: 100px;
-  
-   
-   display: block;
 }
 
 .redes{
@@ -128,11 +125,8 @@
       text-align: center;
    }
    .video {
-      margin-top: 50px;
-      width: 80vw;
-      height: 60vw;
-      border-radius: 20px;
-      justify-self: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
    }
 
    .nosotros_texto {
