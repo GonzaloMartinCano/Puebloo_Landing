@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Navbar from 'react-bootstrap/Navbar'
@@ -9,7 +9,7 @@ import logo_puebloo from './../../img/logo.png'
 const MyNavbar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className="bg-custom-2" variant="light">
-            <Navbar.Brand href='/' ><Link to="/"><Navbar className="title"><img src={logo_puebloo} /> </Navbar></Link></Navbar.Brand>
+            <Navbar.Brand href='/' ><Link to="/"><Navbar className="title"><img src={logo_puebloo} alt="logo_Puebloo" /> </Navbar></Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">

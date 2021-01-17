@@ -62,7 +62,7 @@ const Index = () => {
             //      setImageUrl(images[index])
         }, 3000);
         return () => clearTimeout(timer);
-    }, [index])
+    }, [index, images])
 
     return (
         <div className="index" >
