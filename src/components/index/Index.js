@@ -31,7 +31,7 @@ const Contacto = () => {
         xs={{ span: 6, offset: 3 }}
         className="footer_details redes"
       >
-        <a href="mailto:gmcano85@gmail.com?subject=Contact through portfolio" style={{ color: 'white' }}><EmailIcon className="icono"/></a>
+        <a href="mailto:?subject=Quiero recibir información sobre el proyecto" style={{ color: 'white' }}><EmailIcon className="icono"/></a>
         <LinkedInIcon className="icono" />
         <TwitterIcon className="icono" />
         <InstagramIcon className="icono" />
@@ -65,7 +65,6 @@ const Index = () => {
 
     return (
         <div className="index" >
-
             <div className="presentacion fondo" >
                 <div className="typing">
                     <h1 >Y tú,<br /> ¿de quien eres?</h1>
@@ -113,7 +112,7 @@ const Index = () => {
                     </div>
                 </Col>
             </Row>
-            <Row className="nosotros" >
+            <Row className="nosotros">
                 <Col md={{ span: 10, offset: 1 }} >
                     <div className="nosotros_img" >
                         <img src={home} alt="nav_img" />
