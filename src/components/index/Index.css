@@ -49,7 +49,7 @@
    color:rgb(26, 85, 2);
    font-size: x-large;
    padding-bottom: 0.8em;
-   border-bottom: #ffb515;
+   border-bottom: solid 1px #ffb515;
    margin-bottom: 20px;
 }
 .nosotros_img {
@@ -155,6 +155,7 @@
       width: 20%;
    }
 }
+
 
 @media (min-width: 1300px)   {
    .fondo img {
