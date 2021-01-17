@@ -77,10 +77,10 @@
 }
 
 .video {
-   margin-top: 50px;
-   width: calc(100vw / 2 );
-   height: calc((100vw / 4 ) );
-   border-radius: 20px;
+   margin-top: 100px;
+  
+   
+   display: block;
 }
 
 .redes{

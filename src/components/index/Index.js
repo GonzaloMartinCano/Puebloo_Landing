@@ -78,7 +78,7 @@ const Index = () => {
             </div>
             <Row style={{ margin: "0px" }}>
                 <Col md={{ span: 6, offset: 3 }} >
-                    <video controls className="video" src={video} type="video/mp4" />
+                    <video with={window.innerWidth } height={window.innerHeight /2} controls  src={video} type="video/mp4" />
                 </Col>
             </Row>
             <div className="bienvenido laredsocial">
