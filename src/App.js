@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer'
 
 /** Pages */
 import Index from './pages/Index'
+import Privacidad from './pages/privacidad/Privacidad'
 
 import './App.css';
 
@@ -15,10 +16,12 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
-        <Route path="/" exact render={() => <Index/>} /> 
-        <Route path="/contacto" exact render={() => <Index/>} /> 
+        <Route path="/" exact render={() => <Index />} />
+        <Route path="/contacto" exact render={() => <Index />} />
+        <Route path="/privacidad" exact render={() => <Privacidad />} />
+        {/* <Route path="/*" render={() => < NotFound />} /> */}
       </Switch>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

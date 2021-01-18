@@ -1,7 +1,4 @@
-import React, { useEffect, useState } from "react";
-
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+import React from "react";
 
 /** Components */
 import Hero from '../components/index/hero/Hero'
@@ -12,7 +9,7 @@ import './Index.css'
 const Index = () => {
     return (
         <div className="index" >
-            <Hero/>
+            <Hero />
             <Info />
         </div>
     );

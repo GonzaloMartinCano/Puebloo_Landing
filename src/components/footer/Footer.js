@@ -14,7 +14,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 
 const Footer = () => {
     return (
-        <Row className="footer">
+        <Row className="footer" id="contacto">
             <Col
                 md={{ span: 6, offset: 3 }}
                 xs={{ span: 4, offset: 4 }}
@@ -27,7 +27,7 @@ const Footer = () => {
                 xs={{ span: 6, offset: 3 }}
                 className="footer_details redes"
             >
-                <a href="mailto:?subject=Quiero recibir información sobre el proyecto" style={{ color: 'white' }}><EmailIcon className="icono"/></a>
+                <a href="mailto:?subject=Quiero recibir información sobre el proyecto" style={{ color: 'white' }}><EmailIcon className="icono" /></a>
                 <LinkedInIcon className="icono" />
                 <TwitterIcon className="icono" />
                 <InstagramIcon className="icono" />
