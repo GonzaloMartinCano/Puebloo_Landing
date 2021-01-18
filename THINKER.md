@@ -1,7 +1,7 @@
 # TODO
 [1] Reescribir en componentes [W]
-[2] Ver como hacer routing con # []
-[3] Transiciones y efectos []
+[2] Ver como hacer routing con # [T]
+[3] Transiciones y efectos [D]
 [4] Newsletter y politica de privacidad []
 
 # FIXME
